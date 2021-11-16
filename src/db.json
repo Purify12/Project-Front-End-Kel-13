@@ -1,0 +1,10 @@
+{
+    "posts": [
+      { "id": 1, "title": "Lake Toba", "img": "https://media.istockphoto.com/photos/toba-lake-with-the-green-mountains-picture-id1225199712?b=1&k=20&m=1225199712&s=170667a&w=0&h=wnpwA06h1abelBXmSC09aEc_dkFvUyGgsRuayQpYg3M=" },
+      { "id": 2, "title": "Pura Ulun Danu Bratan Temple", "img": "https://media.istockphoto.com/photos/pura-ulun-danu-bratan-temple-in-bali-picture-id675172642?b=1&k=20&m=675172642&s=170667a&w=0&h=IgKlfRYs9bs6bq3fx0WOCqdgWY3WW2-_2PKBMCcREj0=" },
+      { "id": 3, "title": "Borobudur Temple", "img": "https://images.unsplash.com/photo-1620549146396-9024d914cd99?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Ym9yb2J1ZHVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" },
+      { "id": 4, "title": "Raja Ampat", "img": "https://media.istockphoto.com/photos/top-view-of-piaynemo-raja-ampat-indonesia-picture-id1262899088?b=1&k=20&m=1262899088&s=170667a&w=0&h=zgPDf38odgEyCCoz0vFGMhyLJPnn0jf2ZlVtbCaB9x0=" },
+      { "id": 5, "title": "Taman Laut Bunaken", "img": "https://media.istockphoto.com/photos/splitshot-diving-the-national-park-siladen-bunaken-manado-tua-picture-id168389000?b=1&k=20&m=168389000&s=170667a&w=0&h=xE4rdtEkNdPeUBhYlSh6brkyPE5liucecTbZgQW8Mfs=" },
+      { "id": 6, "title": "Bromo Mount", "img": "https://media.istockphoto.com/photos/an-aerial-view-of-mountain-tops-in-the-fog-picture-id181928587?b=1&k=20&m=181928587&s=170667a&w=0&h=iYnKH6Dk3vtx3XXo6LO6OVbsUpN87nCzgjl4zZT5LPA=" }
+    ],
+  }

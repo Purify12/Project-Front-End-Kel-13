@@ -3,7 +3,7 @@ import CarouselInput from '../Component/CarouselInput';
 import styled from 'styled-components';
 import Navbar from '../Component/Navbar';
 import Footer from '../Component/Footer';
-
+import Data from '../Component/Data';
 
 
 const Container = styled.div`
@@ -27,27 +27,29 @@ function Home() {
                 </div>
                 <div className="row col-md-12">
                     <h2>Rekomendasi Destinasi Pilihan</h2>
-                    <div class="col-md-4">
-                    <div class="bg-primary text-center text-white">.col-md-4</div>
-                    <br/>
-                    </div>
-        
-        
-                    <div class="col-md-4">
-                        <div class="bg-primary text-center text-white">.col-md-4</div>
-                        <br/>
-                    </div>
-        
-        
-                    <div class="col-md-4">
-                        <div class="bg-primary text-center text-white">.col-md-4</div>
-                        <br/>
-                    </div>
+                    <Data/>
                 </div>
 
-                <div className="row col-md-12 py-4">
+                <div className="row py-2">
                     <h2>Pilihan Oleh Infuencer</h2>
-               
+                    <div class="col-md-12 py-2">
+                        <div className="card">
+                            <div className="row py-2">
+                                <div class="col-md-6">
+                                    <div class="bg-primary text-center text-white">
+                                        .col-md-6
+                                    </div>
+                                        <br/>
+                                </div>     
+                                <div class="col-md-6">
+                                    <div class="bg-primary text-center text-white">
+                                        .col-md-6
+                                    </div>
+                                        <br/>
+                                </div>                                                       
+                            </div>
+                        </div>
+                    </div>   
                 </div>  
 
                 <div className="row pt-2">

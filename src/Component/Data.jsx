@@ -1,5 +1,10 @@
 import React, { useState, useEffect, Fragment } from "react";
 import axios from "axios";
+import styled from "styled-components";
+
+const IMG = styled.img`
+  width: 100%
+`
 
 export default function Data() {
   const [data, setdata] = useState([]);
@@ -11,7 +16,7 @@ export default function Data() {
     // URL Ganti dengan alamat github atau API kamu atau URL API MU
     // Method @{get, post, put, patch, delete}
     axios
-      .get("https://jsonplaceholder.typicode.com/comments?postId=11")
+      .get("https://my-json-server.typicode.com/Purify12/Fake-API/posts")
       .then((response) => {
         setdata(response.data);
         setisLoading(false);
@@ -27,15 +32,20 @@ export default function Data() {
   else if (data && !isError)
     return (
       <Fragment>
-        <div className="app" style={{ marginLeft: "5em" }}>
+        <div className="col-md sm-1 align-items-center text-center">
           {data &&
             data.map((item) => (
-              <div>
-                <hr />
-                <h1>{item.name.toUpperCase()}</h1>
-                <i>{item.email}</i>
-                <h2>{item.body}</h2>
-                <hr />
+              <div className="px-6 mx-6 py-2">               
+                  <div className="card">
+                    <div className="card-body">                     
+                      <hr />
+                      <h1>{item.title}</h1>
+                      {/* <i>{item.email}</i>
+                      <h2>{item.body}</h2> */}
+                      <hr />
+                      <a href={item.img}><IMG src={item.img}/></a>
+                    </div>
+                  </div>                              
               </div>
             ))}
         </div>
