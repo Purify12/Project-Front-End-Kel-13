@@ -31,7 +31,7 @@ export default function Data() {
   if (isLoading) return <h1>Loading data</h1>;
   else if (data && !isError)
     return (
-      <Fragment>
+      <>
         <div className="col-md sm-1 align-items-center text-center">
           {data &&
             data.map((item) => (
@@ -60,7 +60,7 @@ export default function Data() {
               </div>
             ))}
         </div>
-      </Fragment>
+      </>
     );
   else {
     return <h1>Something Went Wrong</h1>;

@@ -2,6 +2,9 @@ import React from "react";
 import { Link} from "react-router-dom";
 import Logo from "../images/Logo.png";
 import styled, {keyframes} from "styled-components";
+import { connect } from 'react-redux';
+import { Icon } from '@iconify/react';
+import shoppingcartIcon from '@iconify/icons-whh/shoppingcart';
 
     const putar = keyframes`
     from {
@@ -24,7 +27,7 @@ import styled, {keyframes} from "styled-components";
     text-align: center;
     `;
 
-export default function Navbar() {
+    const Navbar = (props) => {
 
   return (
     <>
@@ -46,11 +49,15 @@ export default function Navbar() {
                         <Link to="/home" class="nav-link">Home</Link>
                     </li>
                     <li class="nav-item">
-                        <Link to="/shop" class="nav-link">Shop</Link>
-                    </li>
-                    <li class="nav-item">
                         <Link to="/pencarian" class="nav-link">Pencarian</Link>
                     </li>
+                    <li class="nav-item">
+                        <Link to="/shop" class="nav-link">Shop</Link>
+                    </li>                 
+                    <li class="nav-item">
+                        <Link to="/cart" class="nav-link">My cart</Link>
+                    </li>
+                    <li><Link to="/cart" class="nav-link"><Icon icon={shoppingcartIcon} inline={true} style={{ marginRight: '0px', }} /><span>{props.items.length}</span></Link></li>
                 </ul>
                 <ul class="navbar-right">
                     <li class="nav-item">
@@ -62,3 +69,11 @@ export default function Navbar() {
     </>
   );
 }
+
+const mapStateToProps = (state) => {
+    return {
+      items: state.addedItems,
+    }
+  }
+  
+  export default connect(mapStateToProps, null)(Navbar)

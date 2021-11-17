@@ -4,6 +4,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Home from "./pages/Home";
 import Searchpage from "./pages/Searchpage";
+import Shop from "./pages/Shop";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -17,6 +19,12 @@ function App() {
         </Route>
         <Route exact path="/pencarian">
           <Searchpage/>
+        </Route>
+        <Route exact path="/shop">
+          <Shop/>
+        </Route>
+        <Route exact path="/cart">
+          <Cart/>
         </Route>
         </Switch>
    </BrowserRouter>

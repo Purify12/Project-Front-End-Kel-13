@@ -41,7 +41,7 @@ function Search() {
       <div className="App">
         <h3>Pencarian</h3>
         <input
-          style={{ width: "30%", height: "25px", text: "center"}}
+          style={{ width: "30%", height: "25px", alignItems: "center", position: "center"}}
           type="text"
           placeholder="Search..."
           onChange={(e) => setSearchTitle(e.target.value)}
