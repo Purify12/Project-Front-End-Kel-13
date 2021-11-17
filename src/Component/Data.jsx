@@ -37,13 +37,24 @@ export default function Data() {
             data.map((item) => (
               <div className="px-6 mx-6 py-2">               
                   <div className="card">
-                    <div className="card-body">                     
-                      <hr />
-                      <h1>{item.title}</h1>
-                      {/* <i>{item.email}</i>
-                      <h2>{item.body}</h2> */}
-                      <hr />
-                      <a href={item.img}><IMG src={item.img}/></a>
+                    <div className="card-body">
+                      <div className="row py-2">
+                        <div class="col-md-6">
+                          <hr />
+                          <h1 style={{color:"darkblue"}}>{item.title}</h1>
+                          {/* <i>{item.email}</i>
+                          <h2>{item.body}</h2> */}
+                          <hr />
+                          <a href={item.img}><IMG src={item.img}/></a>
+                        </div> 
+                        <div class="col-md-6">
+                          <div className="content p-lg-4">
+                            <h1 style={{color:"blue"}}>Informasi Menarik</h1>
+                            <p>{item.detail}</p>
+                            <i>reference : {item.src}</i>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>                              
               </div>

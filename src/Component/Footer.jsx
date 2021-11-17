@@ -19,7 +19,6 @@ function Footer() {
                 <li>Pencarian Lokasi wisata</li>
                 <li>Rekomendasi Wisata</li>
                 <li>Pemesanan Souvenir</li>
-                <li>Pemesanan Tiket</li>
                 </ui>
             </div>
             {/* Column3 */}

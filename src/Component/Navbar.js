@@ -27,7 +27,7 @@ import styled, {keyframes} from "styled-components";
 export default function Navbar() {
 
   return (
-          <>
+    <>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
    
             <Link to="/home" class="flex items-center py-4 px-2">
@@ -46,18 +46,18 @@ export default function Navbar() {
                         <Link to="/home" class="nav-link">Home</Link>
                     </li>
                     <li class="nav-item">
-                        <Link to="/home" class="nav-link">Shop</Link>
+                        <Link to="/shop" class="nav-link">Shop</Link>
                     </li>
                     <li class="nav-item">
-                        <Link to="/home" class="nav-link">Pesan Tiket</Link>
+                        <Link to="/pencarian" class="nav-link">Pencarian</Link>
                     </li>
                 </ul>
                 <ul class="navbar-right">
-                <li class="nav-item">
+                    <li class="nav-item">
                         <Link to="/" class="nav-link">Logout</Link>
                     </li>
                 </ul>
-            </div>
+            </div>         
         </nav>
     </>
   );
