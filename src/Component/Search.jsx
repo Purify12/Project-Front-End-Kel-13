@@ -54,7 +54,7 @@ function Search() {
           posts
             .filter((value) => {
               if (searchTitle === "") {
-                return null;
+                return value;
               } else if (
                 value.title.toLowerCase().includes(searchTitle.toLowerCase())
               ) {

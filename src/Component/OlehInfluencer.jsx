@@ -6,7 +6,6 @@ import Influencer from "../images/influencer.jpg";
 
 const Image = styled.img`
     width:200%
-
 `
 
 function OlehInfluencer() {

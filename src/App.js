@@ -12,10 +12,10 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
-          <Loginpage/>
-        </Route>
-        <Route exact path="/home">
           <Home/>
+        </Route>
+        <Route exact path="/login">
+          <Loginpage/>    
         </Route>
         <Route exact path="/pencarian">
           <Searchpage/>

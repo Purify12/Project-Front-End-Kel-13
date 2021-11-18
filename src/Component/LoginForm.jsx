@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import styled from "styled-components";
+import Navlogin from './Navlogin';
 
 const Container = styled.div`    
-    margin-top:250px;
+    margin: 5em;
     display:flex;
     justify-content: center;
     align-items:center;
@@ -58,42 +59,45 @@ function LoginForm({Logins, error}) {
         Logins(details);
     }
     return (
-    <Container>
-    <CardContent>
-        <form onSubmit={submitHandler}>
-            <div className="form-inner">
-                <h2>Login</h2>
-                {(error !== "") ? ( <div classname="error">{error}</div> ) : ""}
-                
-                <div className="form-group mb-3">
-                    <CardInfo><label htmlFor="name">Name:</label>
-                   <input type="text" name="name" id="name" placeholder="Input Namauser" onChange={e => setDetails({ ...details, name:e.target.value})} value={details.name}/>
-                    </CardInfo>
-                    
-                    
-                </div>
-                <div className="form-group mb-3">
-                    <CardInfo> <label htmlFor="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Email:user@gmail.com" onChange={e => setDetails({ ...details, email:e.target.value})} value={details.email}/>
-                    </CardInfo>
-                   
-                    
-                </div>
-                <div className="form-group mb-3">
-                    <CardInfo><label htmlFor="password">Password:</label>
-                    <input type="password" name="password" id="password" placeholder="Pass:user123" onChange={e => setDetails({ ...details, password:e.target.value})} value={details.password}/>
-                    </CardInfo>
-                    
-                    
-                </div>
-                    <LoginButton type="submit">
-                        Login
-                    </LoginButton>
-                    
-                 </div>
-        </form>
-    </CardContent> 
-    </Container>                  
+      <>
+      <Navlogin />
+        <Container>
+            <CardContent>
+                <form onSubmit={submitHandler}>
+                    <div className="form-inner">
+                        <h2>Login</h2>
+                        {(error !== "") ? ( <div classname="error">{error}</div> ) : ""}
+                        
+                        <div className="form-group mb-3">
+                            <CardInfo><label htmlFor="name">Name:</label>
+                          <input type="text" name="name" id="name" placeholder="Input Nama User" onChange={e => setDetails({ ...details, name:e.target.value})} value={details.name}/>
+                            </CardInfo>
+                            
+                            
+                        </div>
+                        <div className="form-group mb-3">
+                            <CardInfo> <label htmlFor="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Email:user@gmail.com" onChange={e => setDetails({ ...details, email:e.target.value})} value={details.email}/>
+                            </CardInfo>
+                          
+                            
+                        </div>
+                        <div className="form-group mb-3">
+                            <CardInfo><label htmlFor="password">Password:</label>
+                            <input type="password" name="password" id="password" placeholder="Pass:user123" onChange={e => setDetails({ ...details, password:e.target.value})} value={details.password}/>
+                            </CardInfo>
+                            
+                            
+                        </div>
+                            <LoginButton type="submit">
+                                Login
+                            </LoginButton>
+                            
+                        </div>
+                </form>
+            </CardContent> 
+        </Container>
+    </>                  
   )};
   
   export default LoginForm;

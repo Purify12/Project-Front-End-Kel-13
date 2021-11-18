@@ -2,6 +2,11 @@ import React, {useState} from 'react';
 import LoginForm from '../Component/LoginForm';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
+import Bglogin from "../images/login.jpg";
+
+const Loginimg = {
+  backgroundImage: 'url('+ Bglogin +')'
+  }
 
 const Wrapper = styled.section`
   display:flex;
@@ -100,35 +105,35 @@ function Loginpage() {
           setUser({name:"", email:""});
       }
       return (
-        <div className="Login">
+        <div className="Login" style={Loginimg}>
           {(user.email !== "")? (
             <div className ="Welcome">
-              <h1 className ="m-5 p-8"><b>Welcome, <span>{user.name}</span></b></h1>
+              <h1 className ="m-2"><b>Welcome, <span>{user.name}</span></b></h1>
               <Wrapper>
-        <CardContent>
-          <CardPrev>
-            <CH6>OnVocation</CH6>
-            <CH3>For Better Vocation</CH3>
-          </CardPrev>
-          <CardInfo>
-            <h2>Announcement</h2>
-            <h6>Halo, <span>{user.name}</span>.{"\n"}</h6>
-            <h6 class="justify"> 
-              Selamat menggunakan OnVocation, jelajahi aplikasi untuk mengetahui lebih banyak tentang detail daerah wisata populer di seluruh indonesia, baik berdasarkan rekomendasi kami maupun pilihan seorang influencer terkemuka. Temukan destinasi pilihan anda dan dapatkan juga souvenir yang belum sempat anda beli saat perjalanan pulang.
-                  Selamat menjelajah -_- </h6>
-            <English>
-            Congratulations on using OnVocation, explore the application to find out more about the details of popular tourist areas throughout Indonesia, both based on our recommendations and the choices of a leading influencer. Find the destination of your choice and also get souvenirs that you haven't had time to buy on your way home. Enjoy your browsing -_-
-            </English>
-          </CardInfo>
-        </CardContent>
+                  <CardContent>
+                    <CardPrev>
+                      <CH6>OnVocation</CH6>
+                      <CH3>For Better Vocation</CH3>
+                    </CardPrev>
+                    <CardInfo>
+                      <h2>Announcement</h2>
+                      <h6>Halo, <span>{user.name}</span>.{"\n"}</h6>
+                      <h6 class="justify"> 
+                        Selamat menggunakan OnVocation, jelajahi aplikasi untuk mengetahui lebih banyak tentang detail daerah wisata populer di seluruh indonesia, baik berdasarkan rekomendasi kami maupun pilihan seorang influencer terkemuka. Temukan destinasi pilihan anda dan dapatkan juga souvenir yang belum sempat anda beli saat perjalanan pulang.
+                            Selamat menjelajah -_- </h6>
+                      <English>
+                      Congratulations on using OnVocation, explore the application to find out more about the details of popular tourist areas throughout Indonesia, both based on our recommendations and the choices of a leading influencer. Find the destination of your choice and also get souvenirs that you haven't had time to buy on your way home. Enjoy your browsing -_-
+                      </English>
+                    </CardInfo>
+                  </CardContent>
         
-      </Wrapper>
-      <Wrapper>
-              <div className="button">
-                <Button><Link to="/home" class="text-black">Getting Started</Link></Button>
-                <Button onClick={Logout}><a class="text-black">Logout</a></Button>
-              </div>
-      </Wrapper>
+              </Wrapper>
+              <Wrapper>
+                      <div className="button">
+                        <Button><Link to="/" class="text-black">Getting Started</Link></Button>
+                        <Button onClick={Logout}><a class="text-black">Logout</a></Button>
+                      </div>
+              </Wrapper>
               
             </div>
           ) : (
