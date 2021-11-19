@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Influencer from "../images/influencer.jpg";
 
 
+
 const Image = styled.img`
     width:200%
 `
