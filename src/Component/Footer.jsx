@@ -9,7 +9,7 @@ function Footer() {
             <div className="col">
                 <h4>OnVocation</h4>
                 <p className="list-unstyled">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                OnVocation adalah sebuah website yang memberikan informasi mengenai berbagai rekomendasi lokasi wisata di Indonesia, sehingga objek wisata Indonesia semakin mendunia
                 </p>
             </div>
             {/* Column2 */}
