@@ -33,7 +33,7 @@ import shoppingcartIcon from '@iconify/icons-whh/shoppingcart';
     <>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
    
-            <Link to="/home" class="flex items-center py-4 px-2">
+            <Link to="/" class="flex items-center py-4 px-2">
                         <img src={Logo} alt="Logo" class="h-8 w-8" />
                         <StyledH1Center primary={false}><span class="font-semibold text-white text-sm">OnVocation</span></StyledH1Center>
             </Link>
